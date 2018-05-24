@@ -48,7 +48,6 @@
       min-height: 18em;
       min-width: 100%;
       background-color: #009966;
-      margin-bottom: 2em;
     }
 
     .img-logo {
@@ -72,7 +71,7 @@
 
     .img-box {
       width: 100%;
-      max-height: 18em;
+      height: 25%;
     }
 
     a {
@@ -133,7 +132,13 @@
       width: 90%;
       grid-template-columns: 25% 50% 25%;
       min-height: 4em;
+    }
 
+    @media (max-width: 1431px) {
+      .grid-container {
+        display: inline-grid;
+        grid-template-columns: 35% 40% 25%;
+      }
     }
 
     .link {
@@ -172,7 +177,7 @@
       </header>
       <div class="conteudo">
         <div class="box">
-          <h3>Olá!</h3>
+          <h3 style="padding: 1em">Olá!</h3>
           <p>
             Minim do eiusmod velit ad mollit in ea in. Eiusmod id dolore ut excepteur eiusmod incididunt incididunt ea Lorem. Consequat
             veniam cillum aute esse consequat cupidatat duis. Aliqua aliquip do incididunt aliqua incididunt sit consectetur
