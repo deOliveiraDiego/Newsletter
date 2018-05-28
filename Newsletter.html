@@ -2,61 +2,41 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Newsletter - Noverde</title>
+</head>
+
+<body>
   <style>
-    @font-face {
-      font-family: "proxima-nova";
-      src: url('proxima-nova.otf')
-    }
-
-    body {
-      font-family: "Proxima-nova";
-    }
-
     h3,
     h4:first-child {
       text-transform: uppercase;
     }
 
     .container {
-      display: flex;
-      justify-content: center;
+      width: 70%;
+      margin: auto;
     }
 
     .content {
-      padding: 1em;
-      width: 35%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      width: 100%;
+      margin: auto;
     }
-
-    @media (max-width: 1024px) {
-      .content {
-        width: 50%;
-      }
-    }
-
-    .conteudo {
-      width: 90%;
-    }
-
     .header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       min-height: 18em;
       min-width: 100%;
       background-color: #009966;
     }
 
     .img-logo {
+      display: block;
+      margin: auto;
       max-width: 10em;
-      margin: 1em 0 3em 0;
+      padding: 1em;
     }
 
     .img-header {
       width: 10em;
+      display: block;
+      margin: 1em auto;
     }
 
     .box {
@@ -71,7 +51,7 @@
 
     .img-box {
       width: 100%;
-      height: 225px;
+      max-height: 20em;
     }
 
     a {
@@ -101,7 +81,7 @@
     }
 
     footer {
-      display: flex;
+
       flex-direction: row;
       justify-content: center;
       background-color: #009966;
@@ -113,7 +93,7 @@
     }
 
     .item1 {
-      display: flex;
+
       align-items: center;
       grid-column-start: 1;
       justify-self: start
@@ -167,72 +147,17 @@
       height: 15px;
     }
   </style>
-</head>
-
-<body>
   <div class="container">
-    <div class="content">
-
-      <header class="header">
-        <img class="img-logo" src="fundo_verde_horizontal.png" alt="Logo - Noverde">
-        <img class="img-header" src="Icon_Newsletter.png" alt="Sino - Noverde">
-      </header>
-      <div class="conteudo">
-        <div class="box">
-          <h3 style="padding: 1em">Olá!</h3>
-          <p>
-            Minim do eiusmod velit ad mollit in ea in. Eiusmod id dolore ut excepteur eiusmod incididunt incididunt ea Lorem. Consequat
-            veniam cillum aute esse consequat cupidatat duis. Aliqua aliquip do incididunt aliqua incididunt sit consectetur
-            enim enim.
-          </p>
-          <img class="img-box" src="gif-test.gif" alt="Child Smiling">
-        </div>
-        <div class="box">
-          <h4>Confira o nosso blog!</h4>
-          <img class="img-box" src="image-test.jpeg" alt="Paisagem">
-          <h4>Irure et pariatur dolor excepteur amet nisi qui reprehenderit.</h4>
-          <p>Id sint ipsum sint anim ipsum cupidatat. Adipisicing aute sint et do ut mollit do aute elit veniam proident cillum.
-            Eiusmod ad aute voluptate exercitation.</p>
-          <button class="btn-noverde">
-            <a href="https://www.noverde.com.br" target="_blank">Ler matéria</a>
-          </button>
-        </div>
-        <div class="box last-box">
-          <img class="img-box" src="image-test-2.jpeg" alt="Paisagem">
-          <h4>Esse eiusmod sunt non in dolor officia.</h4>
-          <p>Excepteur sunt cupidatat aute elit consequat. Labore do excepteur duis occaecat. Qui commodo mollit elit sint sit
-            consequat cillum consectetur nulla aliqua. Nostrud duis velit laboris eu magna. Eu ad ullamco tempor ipsum deserunt
-            pariatur commodo dolore irure exercitation consequat ad. Mollit ullamco do labore nulla.</p>
-          <button class="btn-noverde">
-            <a href="https://www.noverde.com.br" target="_blank">Ler matéria</a>
-          </button>
-        </div>
-        <div>
-          <p class="pre-footer">Em caso de qualquer dúvida fique à vontade para responder este e-mail =)</p>
-        </div>
-      </div>
-      <footer>
-        <div class="grid-container">
-          <div class="item item1">
-            <img class="ele-footer" src="Icon_site_newsletter.png" alt="Website - logo">
-            <a class="ele-footer link" href="https://www.noverde.com.br" target="_blank">
-              Noverde.com.br
-            </a>
-          </div>
-          <div class="item item2">
-            <img class="logo-footer" src="VFooter.png" alt="Logo - Noverde">
-          </div>
-          <div class="item item3">
-            <a href="https://www.facebook.com/Noverde" target="_blank">
-              <img class="fb" src="Facebook_logo_footer_newsletter.png" alt="Facebook - logo">
-            </a>
-            <a href="https://www.instagram.com/vempranoverde" target="_blank">
-              <img class="ele-footer" src="Instagram_logo_footer_newsletter.png" alt="Instagram - Logo">
-            </a>
-          </div>
-        </div>
-      </footer>
-    </div>
+    <table class="content" border="0" cellspacing="0" cellpadding="0">
+      <tr class="header">
+        <td>
+          <img class="img-logo" src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/dc78ea3f/fundo_verde_horizontal.png" alt="Logo - Noverde">
+        </td>
+        <td>
+          <img class="img-header" src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/dc78ea3f/Icon_Newsletter.png" alt="Sino - Noverde">
+        </td>
+      </tr>
+    </table>
   </div>
 </body>
 
