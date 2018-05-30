@@ -6,22 +6,17 @@
 
 <body>
   <style>
-    h3,
-    h4:first-child {
-      text-transform: uppercase;
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
-    .container {
-      width: 70%;
+    .content,
+    .footer {
+      width: 600px;
       margin: auto;
     }
 
-    .content {
-      width: 100%;
-      margin: auto;
-    }
     .header {
-      min-height: 18em;
       min-width: 100%;
       background-color: #009966;
     }
@@ -45,18 +40,29 @@
     }
 
     p {
-      text-align: justify;
+      text-align: center;
       color: #808080
     }
 
-    .img-box {
-      width: 100%;
-      max-height: 20em;
+    .text-box {
+      padding-bottom: 1em;
     }
 
-    a {
-      text-decoration: none;
-      color: white;
+    .center-lower {
+      width: 80%;
+      margin: auto;
+    }
+
+    .img-box {
+      width: 80%;
+    }
+
+    .maiusculo {
+      text-transform: uppercase
+    }
+
+    h4 {
+      padding: 1em;
     }
 
     .btn-noverde {
@@ -64,101 +70,147 @@
       border: none;
       border-radius: 5px;
       padding: .7em 1em;
+      margin: 1em;
     }
 
-    .btn-noverde:hover {
-      background-color: #009977
-    }
-
-    .last-box {
-      padding-bottom: 1em;
-      border-bottom: 1px solid #eee;
+    a {
+      text-decoration: none;
+      color: white;
     }
 
     .pre-footer {
       text-align: center;
       font-size: 0.75em;
+      border-top: 1px solid #eee;
+      padding: 1em;
     }
 
-    footer {
-
-      flex-direction: row;
-      justify-content: center;
+    .footer {
       background-color: #009966;
-      width: 100%;
+      padding: 1em 0;
     }
 
-    .item {
-      align-self: center;
+    .img-footer,
+    .fb {
+      width: 1em;
     }
 
-    .item1 {
-
-      align-items: center;
-      grid-column-start: 1;
-      justify-self: start
+    .footer-content {
+      display: table;
+      width: 80%;
+      margin: auto
     }
 
-    .item2 {
-      grid-column-start: 2;
-      justify-self: center;
+    .footer-content td:first-child {
+      float: left;
     }
 
-    .item3 {
-      grid-column-start: 3;
-      justify-self: end;
+
+    .footer-content td:nth-child(2) {
+      float: right;
+      position: relative;
+      top: 2px;
     }
 
-    .grid-container {
-      display: inline-grid;
-      width: 90%;
-      grid-template-columns: 25% 50% 25%;
-      min-height: 4em;
+    .footer-content td:last-child {
+      display: block;
+      width: 66%;
+      text-align: center;
+      margin: 0 auto;
     }
 
-    @media (max-width: 1431px) {
-      .grid-container {
-        display: inline-grid;
-        grid-template-columns: 35% 38% 27%;
-      }
-    }
-
-    .link {
-      font-size: .8em;
-    }
-
-    .link:hover {
-      color: #eee
+    .link-footer {
+      margin: 0 .5em;
     }
 
     .logo-footer {
       width: 2em;
-      height: 2em;
-    }
-
-    .ele-footer {
-      width: 1em;
-      height: 1em;
-      margin: 0 .5em;
     }
 
     .fb {
-      width: 11px;
-      height: 15px;
+      height: 1em;
     }
   </style>
-  <div class="container">
-    <table class="content" border="0" cellspacing="0" cellpadding="0">
+
+  <table class="content" border="0" cellspacing="0" cellpadding="0">
+    <tr class="header">
+      <td>
+        <img class="img-logo" src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/dc78ea3f/fundo_verde_horizontal.png" alt="Logo - Noverde">
+      </td>
       <tr class="header">
-        <td>
-          <img class="img-logo" src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/dc78ea3f/fundo_verde_horizontal.png" alt="Logo - Noverde">
-        </td>
         <td>
           <img class="img-header" src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/dc78ea3f/Icon_Newsletter.png" alt="Sino - Noverde">
         </td>
       </tr>
+    </tr>
+
+    <tr class="conteudo">
+      <td class="box">
+        <h3 class="maiusculo" style="padding-top: 1em;">Ei fulano!</h3>
+        <p class="center-lower text-box">Minim do eiusmod velit ad mollit in ea in. Eiusmod id dolore ut excepteur eiusmod incididunt incididunt ea Lorem.
+          Consequat veniam cillum aute esse consequat cupidatat duis. Aliqua aliquip do incididunt aliqua incididunt sit
+          consectetur enim enim.
+        </p>
+        <img class="img-box" src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/dc78ea3f/gif-test.gif" alt="Child Smiling">
+      </td>
+    </tr>
+    <tr class="conteudo">
+      <td class="box">
+        <h4 class="maiusculo" style="margin: 1em;">Confira nosso blog</h4>
+        <img class="img-box" src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/dc78ea3f/image-test.jpeg" alt="Paisagem">
+      </td>
+    </tr>
+    <tr class="conteudo">
+      <td class="box">
+        <h4 class="center-lower">Quis id laborum quis id ad id officia nostrud reprehenderit.</h4>
+        <p class="center-lower text-box">Mollit incididunt sint id eu officia cupidatat anim consequat cillum eu. Ea ullamco magna enim sint. Dolore officia
+          officia culpa pariatur.</p>
+        <button class="btn-noverde">
+          <a href="http://blog.noverde.com.br/">Ler matéria</a>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td class="box">
+        <img class="img-box" src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/dc78ea3f/image-test-2.jpeg" alt="Paisagem">
+        <h4 class="center-lower">Velit adipisicing duis proident commodo.</h4>
+        <p class="center-lower text-box">Excepteur aute ipsum Lorem ea esse cillum in ad aliqua exercitation mollit irure. Magna cupidatat tempor consectetur
+          excepteur nostrud commodo qui. Ex excepteur adipisicing pariatur deserunt commodo officia deserunt sint enim sint.
+        </p>
+        <button class="btn-noverde">
+          <a href="http://blog.noverde.com.br/">Ler matéria</a>
+        </button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p class="pre-footer">Em caso de qualquer dúvida fique à vontade para responder este e-mail =)</p>
+      </td>
+    </tr>
+    <table class="footer">
+      <tr class="footer-content">
+        <td>
+          <img class="img-footer" style="position: relative; top: 2px;" src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/dc78ea3f/Icon_site_newsletter.png"
+            alt="Website - logo">
+          <a class="link-footer" href="https://www.noverde.com.br" target="_blank">
+            Noverde.com.br
+          </a>
+        </td>
+        <td>
+          <a href="https://www.facebook.com/Noverde" target="_blank">
+            <img class="fb" src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/dc78ea3f/Facebook_logo_footer_newsletter.png" alt="Facebook - logo">
+          </a>
+          <a href="https://www.instagram.com/vempranoverde" target="_blank">
+            <img class="link-footer img-footer" src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/dc78ea3f/Instagram_logo_footer_newsletter.png"
+              alt="Instagram - Logo">
+          </a>
+        </td>
+        <td>
+          <img class="logo-footer" src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/dc78ea3f/VFooter.png" alt="Logo - Noverde">
+        </td>
+      </tr>
     </table>
-  </div>
+  </table>
 </body>
 
 </html>
