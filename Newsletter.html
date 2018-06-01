@@ -2,6 +2,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
 </head>
 
 <body>
@@ -76,6 +78,8 @@
     a {
       text-decoration: none;
       color: white;
+      font-weight: bold;
+      text-transform: uppercase;
     }
 
     .pre-footer {
@@ -90,9 +94,13 @@
       padding: 1em 0;
     }
 
-    .img-footer,
+    .img-footer {
+      width: 13px;
+    }
+
     .fb {
-      width: 1em;
+      height: 17px;
+      margin-right: 10px;
     }
 
     .footer-content {
@@ -102,33 +110,23 @@
     }
 
     .footer-content td:first-child {
-      float: left;
-    }
-
-
-    .footer-content td:nth-child(2) {
-      float: right;
-      position: relative;
-      top: 2px;
+      width: 12%;
     }
 
     .footer-content td:last-child {
-      display: block;
-      width: 66%;
-      text-align: center;
-      margin: 0 auto;
+      float: right;
     }
 
     .link-footer {
-      margin: 0 .5em;
+      position: relative;
+      bottom: 2px;
+      font-weight: 100;
+      text-transform: none;
+      font-size: small;
     }
 
     .logo-footer {
       width: 2em;
-    }
-
-    .fb {
-      height: 1em;
     }
   </style>
 
@@ -166,7 +164,7 @@
         <p class="center-lower text-box">Mollit incididunt sint id eu officia cupidatat anim consequat cillum eu. Ea ullamco magna enim sint. Dolore officia
           officia culpa pariatur.</p>
         <button class="btn-noverde">
-          <a href="http://blog.noverde.com.br/">Ler matéria</a>
+          <a target="_blank" ef="http://blog.noverde.com.br/">Ler matéria</a>
         </button>
       </td>
     </tr>
@@ -178,7 +176,7 @@
           excepteur nostrud commodo qui. Ex excepteur adipisicing pariatur deserunt commodo officia deserunt sint enim sint.
         </p>
         <button class="btn-noverde">
-          <a href="http://blog.noverde.com.br/">Ler matéria</a>
+          <a target="_blank" href="http://blog.noverde.com.br/">Ler matéria</a>
         </button>
       </td>
     </tr>
@@ -190,21 +188,20 @@
     <table class="footer">
       <tr class="footer-content">
         <td>
-          <img class="img-footer" style="position: relative; top: 2px;" src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/dc78ea3f/Icon_site_newsletter.png"
-            alt="Website - logo">
+          <a href="https://www.facebook.com/Noverde" target="_blank">
+            <img src="facebookwhite.png" class="img-footer fb"></img>
+          </a>
+          <a href="https://www.instagram.com/vempranoverde" target="_blank">
+            <img src="instawhite.png" class="img-footer"></img>
+          </a>
+        </td>
+        <td>
+          <img src="globewhite.png" class="img-footer"></img>
           <a class="link-footer" href="https://www.noverde.com.br" target="_blank">
             Noverde.com.br
           </a>
         </td>
-        <td>
-          <a href="https://www.facebook.com/Noverde" target="_blank">
-            <img class="fb" src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/dc78ea3f/Facebook_logo_footer_newsletter.png" alt="Facebook - logo">
-          </a>
-          <a href="https://www.instagram.com/vempranoverde" target="_blank">
-            <img class="link-footer img-footer" src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/dc78ea3f/Instagram_logo_footer_newsletter.png"
-              alt="Instagram - Logo">
-          </a>
-        </td>
+
         <td>
           <img class="logo-footer" src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/dc78ea3f/VFooter.png" alt="Logo - Noverde">
         </td>
