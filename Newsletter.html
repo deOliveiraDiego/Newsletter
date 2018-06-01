@@ -42,7 +42,7 @@
     }
 
     p {
-      text-align: center;
+      text-align: justify;
       color: #808080
     }
 
@@ -72,7 +72,7 @@
       border: none;
       border-radius: 5px;
       padding: .7em 1em;
-      margin: 1em;
+      margin: 0px 0 2em;
     }
 
     a {
@@ -95,12 +95,13 @@
     }
 
     .img-footer {
-      width: 13px;
+      width: 15px;
+      margin-right: 15px;
+      height: 17px;
     }
 
-    .fb {
-      height: 17px;
-      margin-right: 10px;
+    .img-footer-web {
+      margin: 0;
     }
 
     .footer-content {
@@ -109,20 +110,18 @@
       margin: auto
     }
 
-    .footer-content td:first-child {
-      width: 12%;
-    }
-
     .footer-content td:last-child {
       float: right;
     }
 
     .link-footer {
-      position: relative;
-      bottom: 2px;
       font-weight: 100;
       text-transform: none;
       font-size: small;
+    }
+
+    .link-footer img {
+      margin: 0;
     }
 
     .logo-footer {
@@ -175,7 +174,7 @@
         <p class="center-lower text-box">Excepteur aute ipsum Lorem ea esse cillum in ad aliqua exercitation mollit irure. Magna cupidatat tempor consectetur
           excepteur nostrud commodo qui. Ex excepteur adipisicing pariatur deserunt commodo officia deserunt sint enim sint.
         </p>
-        <button class="btn-noverde">
+        <button class="btn-noverde" style="margin: 0 0 1em;">
           <a target="_blank" href="http://blog.noverde.com.br/">Ler matéria</a>
         </button>
       </td>
@@ -194,10 +193,8 @@
           <a href="https://www.instagram.com/vempranoverde" target="_blank">
             <img src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/5fd5adec/instawhite.png" class="img-footer"></img>
           </a>
-        </td>
-        <td>
-          <img src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/5fd5adec/globewhite.png" class="img-footer"></img>
-          <a class="link-footer" href="https://www.noverde.com.br" target="_blank">
+          <img src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/5fd5adec/globewhite.png" class="img-footer img-footer-web"></img>
+          <a href="https://www.noverde.com.br" target="_blank" class="link-footer">
             Noverde.com.br
           </a>
         </td>
