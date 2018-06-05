@@ -62,6 +62,7 @@
       border-radius: 5px;
       padding: .7em 1em;
       margin: 0px 0 2em;
+      text-decoration: none;
     }
 
     a {
@@ -69,6 +70,12 @@
       color: white;
       font-weight: bold;
       text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    span {
+      text-decoration: none;
+      text-decoration-color: #009966;
     }
 
     .pre-footer {
@@ -110,7 +117,7 @@
       font-weight: 100;
       text-transform: none;
       font-size: small;
-      vertical-align: text-top;
+      vertical-align: super;
       line-height: 7px;
     }
 
