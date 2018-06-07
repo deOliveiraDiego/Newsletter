@@ -1,10 +1,150 @@
-<html lang="en">
+<html>
 
 <head>
-  <link rel="stylesheet" href="Newsletter.css">
+  <title></title>
+  <style type="text/css">
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .content,
+    .footer {
+      width: 600px;
+      margin: auto;
+    }
+
+    .header {
+      min-width: 100%;
+      background-color: #009966;
+    }
+
+    .img-logo {
+      display: block;
+      margin: auto;
+      max-width: 10em;
+      padding: 1em;
+    }
+
+    .img-header {
+      width: 10em;
+      display: block;
+      margin: 1em auto;
+    }
+
+    .box {
+      text-align: center;
+      margin-top: 1em;
+    }
+
+    h3,
+    h4 {
+      color: black;
+    }
+
+    p {
+      text-align: justify;
+      color: #808080
+    }
+
+    .text-box {
+      padding-bottom: 1em;
+    }
+
+    .center-lower {
+      width: 80%;
+      margin: auto;
+    }
+
+    .img-box {
+      width: 80%;
+    }
+
+    .maiusculo {
+      text-transform: uppercase
+    }
+
+    h4 {
+      padding: 1em;
+    }
+
+    .btn-noverde {
+      background-color: #009966;
+      border: none;
+      border-radius: 5px;
+      padding: .7em 1em;
+      margin: 0px 0 2em;
+      text-decoration: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    span {
+      text-decoration: none;
+      text-decoration-color: #009966;
+    }
+
+    .pre-footer {
+      text-align: center;
+      font-size: 0.75em;
+      border-top: 1px solid #eee;
+      padding: 1em;
+    }
+
+    .footer {
+      background-color: #009966;
+      padding: 1em 0;
+    }
+
+    .img-footer {
+      margin-right: 15px;
+      height: 17px;
+    }
+
+    .img-footer-web {
+      margin: 0;
+    }
+
+    .footer-content {
+      display: table;
+      width: 80%;
+      margin: auto
+    }
+
+    .footer-content td {
+      vertical-align: middle;
+    }
+
+    .footer-content td:last-child {
+      float: right;
+    }
+
+    .link-footer {
+      font-weight: 100;
+      text-transform: none;
+      font-size: small;
+      vertical-align: super;
+      line-height: 7px;
+    }
+
+    .link-footer img {
+      margin: 0;
+    }
+
+    .logo-footer {
+      width: 2em;
+    }
+  </style>
 </head>
 
 <body>
+
+
   <table class="content" border="0" cellspacing="0" cellpadding="0">
     <tr class="header">
       <td>
@@ -19,12 +159,10 @@
 
     <tr class="conteudo">
       <td class="box">
-        <h3 class="maiusculo" style="padding-top: 1em;">Ei fulano!</h3>
-        <p class="center-lower text-box">Minim do eiusmod velit ad mollit in ea in. Eiusmod id dolore ut excepteur eiusmod incididunt incididunt ea Lorem.
-          Consequat veniam cillum aute esse consequat cupidatat duis. Aliqua aliquip do incididunt aliqua incididunt sit
-          consectetur enim enim.
+        <h3 class="maiusculo" style="padding-top: 1em;">Ei, [Name,fallback=Amigo Noverde]!!</h3>
+        <p class="center-lower text-box">Não é novidade que economizar dinheiro e reduzir gastos são tarefas bastante complicadas.
         </p>
-        <img class="img-box" src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/dc78ea3f/gif-test.gif" alt="Child Smiling">
+        <img class="img-box" src="https://i.giphy.com/media/h0MTqLyvgG0Ss/giphy.webp" alt="Homem com dinheiro.">
       </td>
     </tr>
     <tr class="conteudo">
@@ -41,7 +179,7 @@
       </td>
       <tr>
         <td class="box" style="padding: 1em 0 2em;">
-          <a href="http://blog.noverde.com.br/" target="_blank" class="btn-noverde" rel="noopener noreferrer" title="Ler matéria" style="text-decoration: none; text-decoration-color: #009966; text-decoration-line: none;">
+          <a href="http://blog.noverde.com.br/" target="_blank" class="btn-noverde" rel="noopener noreferrer" title="Ler matéria" style="color: #fff">
             Ler matéria
           </a>
         </td>
@@ -57,7 +195,7 @@
       </td>
       <tr>
         <td class="box" style="padding: 1em 0 2em;">
-          <a href="http://blog.noverde.com.br/" target="_blank" class="btn-noverde" rel="noopener noreferrer" title="Ler matéria" style="text-decoration: none; text-decoration-color: #009966; text-decoration-line: none;">
+          <a href="http://blog.noverde.com.br/" target="_blank" class="btn-noverde" rel="noopener noreferrer" title="Ler matéria" style="color: #fff">
             Ler matéria</a>
           </button>
         </td>
@@ -70,7 +208,7 @@
   </table>
   <table class="footer">
     <tr class="footer-content">
-      <td style="text-decoration: none; text-decoration-color: #009966; text-decoration-line: none;">
+      <td style="text-decoration: none !important; text-decoration-color: #009966; text-decoration-line: none;">
         <a href="https://www.facebook.com/Noverde" target="_blank" style="color: #009966;">
           <img src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/5fd5adec/facebookwhite.png" class="img-footer" />
         </a>
@@ -79,7 +217,8 @@
         </a>
         <img src="https://cdn.rawgit.com/deOliveiraDiego/Newsletter/5fd5adec/globewhite.png" class="img-footer img-footer-web"></img>
         <a href="https://www.noverde.com.br" target="_blank" class="link-footer" rel="noopener noreferrer" title="Noverde.com.br"
-          style="font-size: 12px; text-decoration: none; text-decoration-color: #009966; text-decoration-line: none;">
+          style="color: #fff;
+          margin-left: 2px;font-size: 12px;">
           Noverde.com.br
         </a>
       </td>
